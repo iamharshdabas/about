@@ -2,10 +2,9 @@ body {
   background-color: #0d001a;
   margin: 0px;
   font-family: sans-serif;
+  height: 100vh;
 }
-.img {
-  margin-top: 128px;
-  text-align: center;
+.img {text-align: center;
 }
 h1 {
   text-align: center;
