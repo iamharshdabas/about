@@ -5,7 +5,7 @@ body{
 }
 h1{
   font-family: 'Dancing Script', cursive;
-  font-size: 50px;
+  font-size: 64px;
   color: #8000FF;
   margin: 0%;
 }
@@ -13,10 +13,10 @@ hr{
   border-style: none;
   border-top: dotted;
   border-color: #400080;
-  border-width: 5px;
-  width: 10%;
+  border-width: 8px;
+  width: 16%;
 }
 a{
   color: #F2E5FF;
-  font-size: 25px;
+  font-size: 32px;
 }
