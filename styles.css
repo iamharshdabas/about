@@ -1,22 +1,22 @@
-body{
-  background-color: #0D001A;
+body {
+  background-color: #0d001a;
   margin: 0px;
   height: 100vh;
 }
-h1{
-  font-family: 'Dancing Script', cursive;
+h1 {
+  font-family: "Dancing Script", cursive;
   font-size: 64px;
-  color: #8000FF;
+  color: #8000ff;
   margin: 0%;
 }
-hr{
+hr {
   border-style: none;
   border-top: dotted;
   border-color: #400080;
   border-width: 8px;
   width: 16%;
 }
-a{
-  color: #F2E5FF;
+a {
+  color: #f2e5ff;
   font-size: 24px;
 }
