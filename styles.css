@@ -20,14 +20,14 @@ h1 {
 hr {
   border-style: none;
   border-top: dotted;
-  border-color: #400080;
+  border-color: #26004D;
   border-width: 8px;
   width: 16%;
 }
 
 a {
   font-family: 'Fira Sans', sans-serif;
-  color: #f2e5ff;
+  color: #F2E5FF;
   font-size: 24px;
 }
 
