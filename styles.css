@@ -1,16 +1,12 @@
 body {
   background-color: #0d001a;
   margin: 0px;
+  text-align: center;
   font-family: sans-serif;
   height: 100vh;
 }
 
-.img {
-  text-align: center;
-}
-
 h1 {
-  text-align: center;
   font-family: 'Comfortaa', cursive;
   font-size: 48px;
   color: #8000ff;
@@ -29,8 +25,4 @@ a {
   font-family: 'Fira Sans', sans-serif;
   color: #F2E5FF;
   font-size: 24px;
-}
-
-.bio-links {
-  text-align: center;
 }
