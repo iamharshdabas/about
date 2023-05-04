@@ -2,7 +2,7 @@ body {
   background-color: #000000;
   margin: 0px;
   text-align: center;
-  font-family: sans-serif;
+  font-family: 'Fira Sans', sans-serif;
   height: 100vh;
 }
 
@@ -16,13 +16,12 @@ h1 {
 hr {
   border-style: none;
   border-top: dotted;
-  border-color: #400080;
+  border-color: #4C0099;
   border-width: 8px;
   width: 16%;
 }
 
 a {
-  font-family: 'Fira Sans', sans-serif;
-  color: #FFFFFF;
+  color: #E6E6E6;
   font-size: 24px;
 }
