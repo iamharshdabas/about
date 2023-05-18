@@ -15,17 +15,17 @@ h1 {
 hr {
   border-style: none;
   border-top: dotted;
-  border-color: #4C0099;
+  border-color: #4c0099;
   border-width: 0.5rem;
   width: 16%;
 }
 
 img {
-  width: 16rem; 
+  width: 16rem;
   height: 16rem;
 }
 
 a {
-  color: #E6E6E6;
+  color: #e6e6e6;
   font-size: 1.5rem;
 }
