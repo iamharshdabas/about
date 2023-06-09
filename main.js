@@ -10,21 +10,14 @@ const camera = new THREE.PerspectiveCamera(
 );
 
 const renderer = new THREE.WebGLRenderer();
-renderer.setSize(256, 128);
+renderer.setSize(window.innerWidth / 2, window.innerHeight / 2);
 document.getElementById('box').appendChild(renderer.domElement);
 // document.body.appendChild(renderer.domElement);
 
-const geometry = new THREE.BoxGeometry(1, 1, 1);
-const material = new THREE.MeshBasicMaterial({ color: 0x00ff00 });
+const geometry = new THREE.SphereGeometry(2, 32, 32);
+const material = new THREE.MeshBasicMaterial({ color: 0x8000ff });
 const cube = new THREE.Mesh(geometry, material);
+
 scene.add(cube);
-
-camera.position.z = 2;
-
-function animate() {
-  requestAnimationFrame(animate);
-  cube.rotation.y += 0.01;
-  renderer.render(scene, camera);
-}
-
-animate();
+camera.position.z = 8;
+renderer.render(scene, camera);
