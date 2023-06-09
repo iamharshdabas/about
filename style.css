@@ -7,3 +7,9 @@ body {
   background-color: #000;
   height: 100vh;
 }
+
+.name {
+  text-align: center;
+  color: #8000ff;
+  font-size: 8rem;
+}
