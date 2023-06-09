@@ -1,23 +1,20 @@
-import * as THREE from 'three';
-import './style.css';
+import * as THREE from 'three'
+import './style.css'
 
-const scene = new THREE.Scene();
-const camera = new THREE.PerspectiveCamera(
-  45,
-  window.innerWidth / window.innerHeight,
-  1,
-  100
-);
+const width = window.innerWidth
+const height = window.innerHeight
 
-const renderer = new THREE.WebGLRenderer();
-renderer.setSize(window.innerWidth / 2, window.innerHeight / 2);
-document.getElementById('box').appendChild(renderer.domElement);
-// document.body.appendChild(renderer.domElement);
+const scene = new THREE.Scene()
+const camera = new THREE.PerspectiveCamera(45, width / height)
+const renderer = new THREE.WebGLRenderer()
 
-const geometry = new THREE.SphereGeometry(2, 32, 32);
-const material = new THREE.MeshBasicMaterial({ color: 0x8000ff });
-const cube = new THREE.Mesh(geometry, material);
+const geometry = new THREE.BoxGeometry(3, 3, 3)
+const material = new THREE.MeshBasicMaterial({ color: 0x8000ff })
+const cube = new THREE.Mesh(geometry, material)
 
-scene.add(cube);
-camera.position.z = 8;
-renderer.render(scene, camera);
+scene.add(cube)
+camera.position.z = 8
+
+renderer.setSize(width / 4, height / 4)
+document.getElementById('profile').appendChild(renderer.domElement)
+renderer.render(scene, camera)
