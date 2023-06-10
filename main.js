@@ -1,5 +1,4 @@
 import * as THREE from 'three'
-import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls'
 import './style.css'
 
 const width = window.innerWidth
@@ -8,7 +7,6 @@ const height = window.innerHeight
 const scene = new THREE.Scene()
 const camera = new THREE.PerspectiveCamera(45, (width / height) * 4)
 const renderer = new THREE.WebGLRenderer()
-const controls = new OrbitControls(camera, renderer.domElement)
 
 const geometry = new THREE.BoxGeometry(3, 3, 3)
 const material = new THREE.MeshBasicMaterial({ color: 0x8000ff })
