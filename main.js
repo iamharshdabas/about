@@ -10,7 +10,6 @@ const renderer = new THREE.WebGLRenderer()
 renderer.setSize(width, height)
 document.body.appendChild(renderer.domElement)
 
-// make a sphere
 const geometry = new THREE.SphereGeometry(0.02, 32, 32)
 const material = new THREE.MeshBasicMaterial({ color: 0xffffff })
 const sphere = new THREE.Mesh(geometry, material)
