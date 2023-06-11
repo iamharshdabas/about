@@ -9,8 +9,8 @@ const renderer = new THREE.WebGLRenderer()
 renderer.setSize(width, height)
 document.body.appendChild(renderer.domElement)
 
-const geometry = new THREE.SphereGeometry(1, 8, 8)
-const material = new THREE.PointsMaterial({ color: 0xffffff })
+const geometry = new THREE.SphereGeometry(1, 24, 24)
+const material = new THREE.PointsMaterial({ color: 0xffffff, size: 0.02 })
 const sphere = new THREE.Points(geometry, material)
 screen.add(sphere)
 
