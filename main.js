@@ -10,8 +10,8 @@ renderer.setSize(width, height)
 document.body.appendChild(renderer.domElement)
 
 const geometry = new THREE.SphereGeometry(1, 8, 8)
-const material = new THREE.MeshBasicMaterial({ color: 0xffffff })
-const sphere = new THREE.Mesh(geometry, material)
+const material = new THREE.PointsMaterial({ color: 0xffffff })
+const sphere = new THREE.Points(geometry, material)
 screen.add(sphere)
 
 camera.position.z = 2
