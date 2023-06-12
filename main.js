@@ -18,9 +18,7 @@ camera.position.z = 2
 
 function animate() {
   requestAnimationFrame(animate)
-  sphere.rotation.x += 0.002
   sphere.rotation.y += 0.002
-  sphere.rotation.z += 0.002
   renderer.render(screen, camera)
 }
 
