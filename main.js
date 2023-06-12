@@ -9,17 +9,23 @@ const renderer = new THREE.WebGLRenderer()
 renderer.setSize(width, height)
 document.body.appendChild(renderer.domElement)
 
-const geometry = new THREE.SphereGeometry(1, 64, 64)
-const material = new THREE.PointsMaterial({ color: 0x8000ff, size: 0.002 })
-const sphere = new THREE.Points(geometry, material)
-screen.add(sphere)
+const totalStar = 2000
+const starGeomatry = new THREE.BufferGeometry()
+const stars = new Float32Array(totalStar * 3)
+for (let i = 0; i < totalStar * 3; i++) {
+  stars[i] = Math.random() * 4 - 2
+  starGeomatry.setAttribute('position', new THREE.BufferAttribute(stars, 3))
+}
+const starMaterial = new THREE.PointsMaterial({ color: 0xffffff, size: 0.008 })
+const starMesh = new THREE.Points(starGeomatry, starMaterial)
+screen.add(starMesh)
 
 camera.position.z = 2
 
 function animate() {
   requestAnimationFrame(animate)
-  sphere.rotation.y += 0.002
-  renderer.render(screen, camera)
+  // sphere.rotation.y += 0.002
 }
 
-animate()
+renderer.render(screen, camera)
+// animate()
