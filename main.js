@@ -10,7 +10,7 @@ renderer.setSize(width, height)
 document.body.appendChild(renderer.domElement)
 
 const geometry = new THREE.SphereGeometry(1, 64, 64)
-const material = new THREE.PointsMaterial({ color: 0xffffff, size: 0.002 })
+const material = new THREE.PointsMaterial({ color: 0x8000ff, size: 0.002 })
 const sphere = new THREE.Points(geometry, material)
 screen.add(sphere)
 
