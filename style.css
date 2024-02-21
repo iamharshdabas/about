@@ -1,0 +1,51 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.heropage {
+  background-color: #000000;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+}
+
+.name-head, .name-main{
+  color: #ffffff;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 4rem;
+  margin: 0 4rem;
+}
+
+.name-pera {
+  color: #808080;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 2rem;
+  margin: 1rem 4rem;
+}
+
+@media (max-width: 1536px) {
+  html {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 1024px) {
+  html {
+    font-size: 8px;
+  }
+
+  .heropage {
+    grid-template-columns: 1fr;
+  }
+
+  .grid-moon {
+    order: 2;
+  }
+
+  .grid-intro {
+    order: 1;
+    padding: 5rem;
+  }
+}
+
